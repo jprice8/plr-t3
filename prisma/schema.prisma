@@ -55,6 +55,7 @@ model User {
     image         String?
     accounts      Account[]
     sessions      Session[]
+    itemReset     ItemReset[]
 }
 
 model VerificationToken {
@@ -64,3 +65,19 @@ model VerificationToken {
 
     @@unique([identifier, token])
 }
+
+// Reset models
+model Par {
+    id          String @id @default(cuid())
+    description String
+}
+
+model ItemReset {
+    id              String  @id @default(cuid())
+    userId          String
+    user            User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+    resetLevel      Int
+    lastModified    DateTime
+}
+
+// Shipping models TODO
