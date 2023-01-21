@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-gray-100 scrollbar-hide;
+    }
+}
+
+@layer components {
+    .sidebarIcon {
+        @apply h-6 text-[#808080] cursor-pointer;
+    }
+
+    .icon {
+        @apply hover:scale-125 transition-all duration-150 ease-out;
+    }
+
+    .croppedIcon {
+        clip-path: inset(0 50% 0 0);
+    }
+}
