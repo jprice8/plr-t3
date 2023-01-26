@@ -1,11 +1,8 @@
 import { type NextPage } from "next";
-import Head from "next/head";
 import { useSession } from "next-auth/react";
 
 import { api } from "../utils/api";
 import { useRouter } from "next/router";
-import AcuteDashboard from "../components/AcuteDashboard";
-import Sidebar from "../components/shared/Sidebar";
 import Dashboard from "../components/dashboard";
 import Container from "../components/shared/Container";
 
