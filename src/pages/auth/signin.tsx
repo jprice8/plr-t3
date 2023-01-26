@@ -8,7 +8,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect } from "react";
-import Loader from "../../components/Loader";
+import Loader from "../../components/shared/Loader";
 
 interface Props {
   providers:

@@ -1,11 +1,12 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
+import ResetContainer from "../components/reset";
+import Container from "../components/shared/Container";
 
 const Reset = () => {
   return (
-    <main className="flex min-h-screen min-w-max lg:pb-24">
-      <Sidebar />
-    </main>
+    <Container>
+      <ResetContainer />
+    </Container>
   );
 };
 

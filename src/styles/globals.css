@@ -9,10 +9,6 @@
 }
 
 @layer components {
-    .sidebarIcon {
-        @apply h-6 text-[#808080] cursor-pointer;
-    }
-
     .icon {
         @apply hover:scale-125 transition-all duration-150 ease-out;
     }
